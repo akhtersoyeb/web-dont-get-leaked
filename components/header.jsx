@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { SignInButton } from "@clerk/nextjs"
 
 export function Header() {
   return (
@@ -35,9 +36,11 @@ export function Header() {
             Contact
           </Link>
         </nav> */}
-        <Button variant="outline" className="">
-          Login
-        </Button>
+        <SignInButton>
+          <Button variant="outline" className="">
+            Already have an account?
+          </Button>
+        </SignInButton>
       </div>
     </header>
   )

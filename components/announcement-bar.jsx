@@ -4,7 +4,7 @@ export function AnnouncementBar() {
       <p className="flex items-center justify-center gap-2">
         <span className="font-medium">✨ Dont get leaked</span>
         <span className="hidden sm:inline">with</span>
-        <span className="hidden sm:inline">50+ website integrations and more coming every week.</span>
+        <span className="hidden sm:inline">our website integrations and more coming every week.</span>
         {/* <span className="ml-2">→</span> */}
       </p>
     </div>

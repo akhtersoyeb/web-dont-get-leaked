@@ -4,6 +4,7 @@ import { ShineBorder } from "@/components/ui/shine-border"
 import { Play } from "lucide-react"
 import Image from "next/image"
 import { ShowcaseSection } from "./showcase-section"
+import { SignUpButton } from "@clerk/nextjs"
 
 export function HeroSection() {
   return (
@@ -21,16 +22,18 @@ export function HeroSection() {
             <span className="">Ooops!</span>
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-            Dont get leaked during screen sharing. We will blur your private chats, emails, search history from 50+ websites so that you can share your screen without any worries.
+            Dont get leaked during screen sharing. We will blur your private chats, emails, search history from websites so that you can share your screen without any worries.
           </p>
           <div className="flex gap-4 justify-center">
             <Button variant="outline" className="gap-2 border-white/10 bg-white/5 hover:bg-white/10">
-              <img src="/chrome.svg" alt="Chrome Logo" width={24} height={24} className="w-6 h-6" />
-              Install Extension
+              {/* <img src="/chrome.svg" alt="Chrome Logo" width={24} height={24} className="w-6 h-6" /> */}
+              Unlock Premium for Life at $49.99 only
             </Button>
-            <Button variant="secondary" className="bg-white text-black hover:bg-gray-100">
-              Get Started
-            </Button>
+            <SignUpButton>
+              <Button onClick={() => console.log('signup')} variant="secondary" className="bg-white z-20 text-black hover:bg-gray-100">
+                Get Started
+              </Button>
+            </SignUpButton>
           </div>
         </div>
 
