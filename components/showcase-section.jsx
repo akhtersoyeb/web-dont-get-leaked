@@ -7,9 +7,15 @@ export function ShowcaseSection() {
           <p className="mt-4 text-lg text-gray-600">Companies choose Magic UI to build their landing pages.</p>
         </div> */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {Array.from({ length: 6 }).map((_, i) => (
+          {/* {Array.from({ length: 6 }).map((_, i) => (
             <div key={i} className="aspect-[16/10] overflow-hidden rounded-xl bg-gray-100" />
-          ))}
+          ))} */}
+          <img src="/promo/s1.png" className="aspect-[16/10] overflow-hidden`" />
+          <img src="/promo/s2.png" className="aspect-[16/10] overflow-hidden`" />
+          <img src="/promo/s3.png" className="aspect-[16/10] overflow-hidden`" />
+          <img src="/promo/s4.png" className="aspect-[16/10] overflow-hidden`" />
+          <img src="/promo/s5.png" className="aspect-[16/10] overflow-hidden`" />
+          <img src="/promo/s6.png" className="aspect-[16/10] overflow-hidden`" />
         </div>
       </div>
     </section>

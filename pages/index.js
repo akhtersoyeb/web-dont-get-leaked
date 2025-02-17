@@ -1,5 +1,6 @@
 import { AnnouncementBar } from "@/components/announcement-bar"
 import { FeaturesSection } from "@/components/features-section"
+import Footer from "@/components/footer"
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { IntegrationSection } from "@/components/integration-section"
@@ -32,6 +33,7 @@ export default function Home() {
       <HeroSection />
       <AnnouncementBar />
       <IntegrationSection />
+      <Footer />
     </main>
   )
 }

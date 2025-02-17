@@ -10,7 +10,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/logo-dark.svg"
+              src="/logo.svg"
               alt="Crop Studio"
               width={32}
               height={32}
