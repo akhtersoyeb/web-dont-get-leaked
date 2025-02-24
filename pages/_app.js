@@ -4,7 +4,7 @@ import { ClerkProvider } from "@clerk/nextjs"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 import Head from "next/head"
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 const queryClient = new QueryClient()
 
 export default function App({ Component, pageProps }) {
@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
           <title>Dont get leaked</title>
         </Head>
         <Component {...pageProps} />
-        <GoogleTagManager gtmId="G-BBDP5JNMC0" />
+        <GoogleAnalytics gaId="G-BBDP5JNMC0" />
         <Toaster />
         <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
