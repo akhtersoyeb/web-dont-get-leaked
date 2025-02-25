@@ -1,6 +1,6 @@
 // pages/contact.tsx
-import Head from 'next/head';
-import { Twitter, Mail } from 'lucide-react';
+import Head from "next/head"
+import { Twitter, Mail } from "lucide-react"
 
 const Contact = () => {
   return (
@@ -29,8 +29,12 @@ const Contact = () => {
                   <Twitter className="h-6 w-6 text-blue-500" />
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-gray-900 mb-1">Follow on Twitter</h2>
-                  <p className="text-gray-600">For updates and quick responses</p>
+                  <h2 className="text-lg font-semibold text-gray-900 mb-1">
+                    Follow on Twitter
+                  </h2>
+                  <p className="text-gray-600">
+                    For updates and quick responses
+                  </p>
                 </div>
               </div>
               <a
@@ -51,8 +55,12 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-green-500" />
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-gray-900 mb-1">Send an Email</h2>
-                  <p className="text-gray-600">For detailed inquiries and support</p>
+                  <h2 className="text-lg font-semibold text-gray-900 mb-1">
+                    Send an Email
+                  </h2>
+                  <p className="text-gray-600">
+                    For detailed inquiries and support
+                  </p>
                 </div>
               </div>
               <a
@@ -66,14 +74,32 @@ const Contact = () => {
 
             {/* Additional Info */}
             <div className="mt-12 text-center text-gray-600 text-sm">
-              <p>We typically respond within 24-48 hours during business days.</p>
-              <p className="mt-2">For immediate assistance, reaching out on Twitter is recommended.</p>
+              <p>
+                We typically respond within 24-48 hours during business days.
+              </p>
+              <p className="mt-2">
+                For immediate assistance, reaching out on Twitter is
+                recommended.
+              </p>
+            </div>
+
+            <div className="mt-12 text-center text-gray-600 text-sm">
+              <p className="mt-2">Address:</p>
+              <address className="not-italic mt-1">
+                Don't Get Leaked
+                <br />
+                Madhakhali, Bhupatinagar
+                <br />
+                Purbar Medinipur, West Bengal
+                <br />
+                India, 721425
+              </address>
             </div>
           </div>
         </div>
       </main>
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
